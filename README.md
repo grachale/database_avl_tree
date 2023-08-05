@@ -41,6 +41,7 @@ size_t sold(size_t r) const - Returns the number of sold units of the product ra
 size_t sold(size_t from, size_t to) const - Similar to the single-parameter version, but returns the sum of sold units over the interval from 'from' to 'to' (inclusive on both ends). That is, sold(r, r) == sold(r) and sold(1, products()) is the total number of sold units across all product types. Input where 'to' < 'from' is considered invalid.
 
 Bonus (optional), in src/main.cpp these methods are also implemented:
+
 size_t first_same(size_t r) const - Returns the smallest rank 'r'' for which sold(r') == sold(r).
 
 size_t last_same(size_t r) const - Returns the largest rank 'r'' for which sold(r') == sold(r).
